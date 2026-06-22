@@ -15,7 +15,7 @@
 | 팀 구성 | 2인 팀 프로젝트 (염재니, 정한길) |
 | 담당 역할 | 기구 설계·제작 (랜딩기어 구조물, 스프링 충격흡수, 실린더 연결 링크) |
 | 팀원 역할 | PLC 프로그래밍 및 시연 영상 (정한길) |
-| 시연 영상 | 준비 중 |
+| 프로젝트 게시 | [호서대 로봇공학과 PLC 게시판 (2021-2, 목5조)](https://robotics.hoseo.ac.kr/Home//BBSView.mbz?action=MAPP_2109231837&schIdx=61055&schCategorycode=&schKeytype=subject&schKeyword=&pageIndex=1) |
 
 ## 🎯 프로젝트 개요
 항공기 랜딩기어의 인입(이륙 시)·전개(착륙 시) 동작을 PLC 시퀀스 제어와 공압 실린더로 자동화한 테스트 장비입니다. 실제 비행기 랜딩기어가 문이 열리며 실린더로 전개되고, 착륙 시 충격을 흡수하는 동작 메커니즘을 축소 모델로 구현했습니다. 충격흡수장치는 고무·공기 압축·오레오 등 여러 방식 중 **스프링 방식**으로 구현했습니다.
@@ -87,6 +87,6 @@ flowchart LR
 | ![화면3](images/03.png) | 스프링 방식 충격흡수 구조 |
 | ![화면4](images/04.png) | 동작 상태 표시 (전개=빨강 램프 / 인입=초록 램프) |
 
-## 🎬 시연 영상
-[![시연 영상](images/thumbnail.png)](여기에-유튜브-링크)
-> 시연 영상은 준비 중입니다.
+## 📄 관련 자료
+- 호서대학교 로봇공학과 PLC프로그래밍 프로젝트 게시 — **「랜딩기어 및 신뢰도 테스트 장비」** (2021-2, 목5조 · 염재니/정한길)
+  👉 https://robotics.hoseo.ac.kr/Home//BBSView.mbz?action=MAPP_2109231837&schIdx=61055&schCategorycode=&schKeytype=subject&schKeyword=&pageIndex=1
