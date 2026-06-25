@@ -77,13 +77,28 @@ flowchart LR
 > **Challenge:** 본 장비는 반복 동작 횟수를 카운트하는 신뢰도 테스트 장비로, 수백 회 이상 반복되는 전개·인입 동작에서 구조물과 링크가 변형·파손되지 않아야 했다.
 > **Solution:** 3D 프린팅 부품과 실린더 연결 링크를 반복 동작에 견디도록 설계·제작하고, 전진/후진 위치에서 리미트 스위치가 안정적으로 감지되도록 기구부를 조립했다. 이를 통해 반복 사이클 테스트 중 구동부의 내구성과 동작 안정성을 확인할 수 있도록 했다.
 
-## 📸 스크린샷
+## 📸 프로젝트 흐름 및 이미지 기록
+> 참고 구조 → 설계/제작 → PLC 테스트베드 → 반복 동작 검증 순서로 정리했습니다. PLC 시퀀스는 팀 프로젝트 범위이며, 본인은 기구 설계·제작·충격흡수 구조와 테스트 장비 구현에 집중했습니다.
+
+```mermaid
+flowchart LR
+    Reference[Landing Gear Reference] --> Mechanism[Linkage / Spring Absorber Design]
+    Mechanism --> Fabrication[3D Printing + Assembly]
+    Fabrication --> PLC[PLC Sequence Test]
+    PLC --> Reliability[Repeated Extension / Retraction Test]
+```
 
 | 화면 | 설명 |
 |------|------|
-| ![화면1](images/01.jpeg) | 항공기 랜딩기어 실물 — 다륜 바퀴, 지지 스트럿, 유압 실린더, 바퀴 고임목(참고 자료) |
-| ![화면2](images/02.jpeg) | 항공기 랜딩기어 다륜 보기(bogie) 근접 — 4개 바퀴 구조 (참고 자료) |
-| ![화면3](images/03.jpg) | 프로젝트 진행 일정표 — 설계·프로그램·제작 및 동작 영상 단계 |
+| ![항공기 랜딩기어 참고](images/01.jpeg) | 항공기 랜딩기어 실물 — 다륜 바퀴, 지지 스트럿, 유압 실린더, 바퀴 고임목 참고 자료 |
+| ![다륜 보기 참고](images/02.jpeg) | 항공기 랜딩기어 다륜 보기 근접 — 4개 바퀴 구조 참고 자료 |
+| ![프로젝트 일정표](images/03.jpg) | 프로젝트 진행 일정표 — 설계·프로그램·제작 및 동작 영상 단계 |
+| ![PLC 테스트베드 동작](images/04_plc-testbed-motion.png) | PLC 테스트베드 동작 장면 — 실린더/링크 구동으로 랜딩기어 전개·수납을 반복 검증 |
+| ![PLC 패널 전체](images/05_plc-panel-overview.png) | PLC 패널 전체 — 입력/출력, 전원, 릴레이, 스위치가 연결된 실습 장비 환경 |
+| ![랜딩기어 모델 전면](images/06_landing-gear-model-front.png) | 제작 모델 전면 — 바퀴, 링크, 스프링 흡수부, 실린더 연결부가 실제로 조립된 상태 |
+| ![충격흡수 구조 상세](images/07_shock-absorber-detail.png) | 충격흡수 구조 상세 — 반복 전개·수납 중 충격을 완화하기 위한 스프링/링크 배치 |
+| ![제어 패널 근접](images/08_control-panel-closeup.png) | 제어 패널 근접 — 수동 조작과 PLC 입출력 확인을 위한 테스트 인터페이스 |
+| ![랜딩기어 프로토타입](images/09_landing-gear-prototype.png) | 랜딩기어 프로토타입 — 제작 완료 후 신뢰도 테스트 장비에 결합한 전체 모습 |
 
 ## 📄 관련 자료
 - 호서대학교 로봇공학과 PLC프로그래밍 프로젝트 게시 — **「랜딩기어 및 신뢰도 테스트 장비」** (2021-2, 목5조 · 염재니/정한길)
